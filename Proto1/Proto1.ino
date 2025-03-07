@@ -86,8 +86,8 @@ void BalanceRocky()
 
     // **************Enter the control parameters here
     
-  float Kp = 4.4487e+03;//2.4487e+03;
-  float Ki = 1.0265e+02;//1.0265e+04;
+  float Kp = 2.4487e+03;//2.4487e+03;
+  float Ki = 3.0265e+04;//1.0265e+04;
   float Ji = -1.0772e+03;
   float Jp = 71.3642;
   float Ci = -680.2939;//-680.2939;
@@ -125,8 +125,8 @@ void BalanceRocky()
   // right to left. This helps ensure that the Left and Right motors are balanced
 
   // *** enter equations for input signals for v_c (left and right) in terms of the variables available ****
-    v_c_R = v_d - Jp*measured_speedR - Ji*distRight_m - Ci*dist_accum;
-    v_c_L = v_d - Jp*measured_speedL - Ji*distLeft_m - Ci*dist_accum;     
+    v_c_L = v_d - Jp*measured_speedR - Ji*distRight_m - Ci*dist_accum;
+    v_c_R = v_d - Jp*measured_speedL - Ji*distLeft_m - Ci*dist_accum;     
 
 
 
